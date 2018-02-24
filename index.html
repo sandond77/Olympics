@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Olympics</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+  	  html, body, .block {
+    height: 100%;
+  }
+
+  </style>
+</head>
+<body>
+	<div id="amber" class="block amber">
+  <nav class="pushpin-demo-nav" data-target="amber">
+    <div class="nav-wrapper amber">
+      <div class="container">
+        <a href="#" class="brand-logo">Gold</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!">Gold Link 1</a></li>
+          <li><a href="#!">Gold Link 2</a></li>
+          <li><a href="#!">Gold Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div id="grey" class="block grey lighten-1">
+  <nav class="pushpin-demo-nav" data-target="grey">
+    <div class="nav-wrapper grey">
+      <div class="container">
+        <a href="#" class="brand-logo">Silver</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!">Silver Link 1</a></li>
+          <li><a href="#!">Silver Link 2</a></li>
+          <li><a href="#!">Silver Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div id="orange" class="block orange darken-4">
+  <nav class="pushpin-demo-nav" data-target="orange">
+    <div class="nav-wrapper orange darken-4">
+      <div class="container">
+        <a href="#" class="brand-logo">Bronze</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!">Bronze Link 1</a></li>
+          <li><a href="#!">Bronze Link 2</a></li>
+          <li><a href="#!">Bronze Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script>
+   $(document).ready(function(){
+    $('.target').pushpin({
+      top: 0,
+      bottom: 1000,
+      offset: 0
+    });
+     $('.pushpin-demo-nav').each(function() {
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
+    $this.pushpin({
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    });
+  });
+  });
+
+
+
+ </script>
+</body>
+</html>
