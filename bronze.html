@@ -16,6 +16,7 @@
     <nav class="yellow darken-4">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Bronze Medals</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="gold.html">Gold</a></li>
         <li><a href="silver.html">Silver</a></li>
@@ -27,6 +28,14 @@
 
 
 </div>
+
+<ul class="side-nav" id="mobile-demo">
+
+    <li><a href="gold.html">Gold</a></li>
+        <li><a href="silver.html">Silver</a></li>
+        <li><a href="#">Bronze</a></li>
+      </ul>
+      <br><br>
 
 
 
@@ -41,7 +50,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
  <script>
    $(document).ready(function(){
-  
+    $(".button-collapse").sideNav({closeOnClick: true});
    
   });
  </script>
