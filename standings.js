@@ -3,7 +3,7 @@
 // Below data will hold 2018 standings.
 // ===============================================================================
 
-var medals = [
+var standings = [
 {
   "place":1,
   "country":"Norway",
@@ -247,4 +247,4 @@ var medals = [
 ];
 
 // Note how we export the array. This makes it accessible to other files using require.
-module.exports = medals.js;
+module.exports = standings.js;
