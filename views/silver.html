@@ -30,32 +30,34 @@ html, body {
 </head>
   <body>
   <div>
-    <nav class="yellow accent-2">
+    <nav class="grey">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Gold Medals</a>
+      <a href="#" class="brand-logo">Silver Medals</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Gold</a></li>
-        <li><a href="silver.html">Silver</a></li>
+        <li><a href="gold.html">Gold</a></li>
+        <li><a href="#">Silver</a></li>
         <li><a href="bronze.html">Bronze</a></li>
       </ul>
-    	</div>
-	</nav>
+    </div>
+
+  </nav>
 </div>
 
-	<ul class="side-nav" id="mobile-demo">
+<ul class="side-nav" id="mobile-demo">
 
-		<li><a href="#">Gold</a></li>
-        <li><a href="silver.html">Silver</a></li>
+    <li><a href="gold.html">Gold</a></li>
+        <li><a href="#">Silver</a></li>
         <li><a href="bronze.html">Bronze</a></li>
       </ul>
       <br><br>
 
-<div class="container">
-	<!--Gold map google element goes here -->
-  <div id="goldMap">
-  </div>
-</div>
+      <div class="container">
+        <!-- Silver goole map goes here -->
+        <div id="silverMap">
+        </div>
+      </div>
+
 
 
 
@@ -69,15 +71,16 @@ html, body {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
  <script>
    $(document).ready(function(){
-  	$(".button-collapse").sideNav({closeOnClick: true});
+    $(".button-collapse").sideNav({closeOnClick: true});
+  
    
   });
  </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
   async defer></script>
 
-<script src="assets/javascript/gold.js"> </script>
+<script src="../public/assets/javascript/silver.js"> </script>
 
 </body>
 </html>
