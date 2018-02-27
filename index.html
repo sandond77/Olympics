@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Olympics</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Olympics</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -11,30 +12,25 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-  	  html, body, .block {
+      html, body, .block {
     height: 100%;
   }
-
-
   .pin-top {
     position: relative;
   }
-
   
   .pin-bottom {
     position: relative;
   }
-
   
   .pinned {
     position: fixed !important;
   }
        
-
   </style>
 </head>
 <body>
-	<div id="amber" class="block amber">
+  <div id="amber" class="block amber">
   <nav class="pushpin-demo-nav" data-target="amber">
     <div class="nav-wrapper amber">
       <div class="container">
@@ -87,18 +83,15 @@
       bottom: 1000,
       offset: 0
     });
-     $('.pushpin-demo-nav').each(function() {
-    var $this = $(this);
-    var $target = $('#' + $(this).attr('data-target'));
-    $this.pushpin({
-      top: $target.offset().top,
-      bottom: $target.offset().top + $target.outerHeight() - $this.height()
-    });
+  //    $('.pushpin-demo-nav').each(function() {
+  //   var $this = $(this);
+  //   var $target = $('#' + $(this).attr('data-target'));
+  //   $this.pushpin({
+  //     top: $target.offset().top,
+  //     bottom: $target.offset().top + $target.outerHeight() - $this.height()
+  //   });
+  // });
   });
-  });
-
-
-
  </script>
 </body>
 </html>
