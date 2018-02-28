@@ -9,7 +9,7 @@ router.get('/', function (req, res) {
 
 //Need to figure out how to render our data to the page...
 router.get('/gold', function (req, res) {
-  db.Medals.findAll({
+  db.Medalist.findAll({
     where: {
       medals: gold;
     }
@@ -20,7 +20,7 @@ router.get('/gold', function (req, res) {
 
 
 router.get('/silver', function (req, res) {
-  db.Medals.findAll({
+  db.Medalist.findAll({
     where: {
       medals: silver;
     }
@@ -30,7 +30,7 @@ router.get('/silver', function (req, res) {
 });
 
 router.get('/bronze', function (req, res) {
-  db.Medals.findAll({
+  db.Medalist.findAll({
     where: {
       medals: bronze;
     }
