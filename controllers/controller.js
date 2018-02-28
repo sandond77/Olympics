@@ -11,9 +11,9 @@ router.get('/', function (req, res) {
 router.get('/gold', function (req, res) {
   db.Medalist.findAll({
     where: {
-      medals: gold;
+      medals: gold
     }
-  }).then(function (data) {
+  }).then(function(data){
     console.log(data)
   });
 });
@@ -22,9 +22,9 @@ router.get('/gold', function (req, res) {
 router.get('/silver', function (req, res) {
   db.Medalist.findAll({
     where: {
-      medals: silver;
+      medals: silver
     }
-  }).then(function (data) {
+  }).then(function(data){
     console.log(data)
   });
 });
@@ -32,9 +32,9 @@ router.get('/silver', function (req, res) {
 router.get('/bronze', function (req, res) {
   db.Medalist.findAll({
     where: {
-      medals: bronze;
+      medals: bronze
     }
-  }).then(function (data) {
+  }).then(function(data){
     console.log(data)
   });
 });
