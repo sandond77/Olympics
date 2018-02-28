@@ -12,104 +12,84 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-      html, body, .block {
-    height: 100%;
+  h3 {
+    text-shadow: 1px 1px black;
   }
-  .pin-top {
-    position: relative;
-  }
-  
-  .pin-bottom {
-    position: relative;
-  }
-  
-  .pinned {
-    position: fixed !important;
-  }
-       
-  #goldMap, #silverMap, #bronzeMap, .container {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin: auto;
-  }
-  </style>
-</head>
+
+</style>
 <body>
-  <div id="amber" class="block amber">
-  <nav class="pushpin-demo-nav" data-target="amber">
-    <div class="nav-wrapper amber">
-      <div class="container">
-        <a href="#" class="brand-logo">Gold</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#!">Gold Link 1</a></li>
-          <li><a href="#!">Gold Link 2</a></li>
-          <li><a href="#!">Gold Link 3</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div id="goldMap">
+ <div class="slider fullscreen">
+    <ul class="slides">
+      <li>
+        <img src="../public/assets/images/flag.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="yellow-text accent-1">Olympics Medal Tracker</h3>
+          <h5 class="black-text">Winter Olympics 2018</h5>
+        </div>
+      </li>
+      <li>
+        <img src="../public/assets/images/skier.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="yellow-text accent-3">Gold</h3>
+          
+        </div>
+      </li>
+      <li>
+        <img src="../public/assets/images/skaters.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="grey-text">Silver</h3>
+          
+        </div>
+      </li>
+      <li>
+        <img src="../public/assets/images/sledder.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="orange-text">Bronze</h3>
+          
+        </div>
+      </li>
+    </ul>
+     <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">search</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating yellow accent-2" href="gold.html"><i class="material-icons">ac_unit</i></a></li>
+      <li><a class="btn-floating grey" href="silver.html"><i class="material-icons">ac_unit</i></a></li>
+      <li><a class="btn-floating orange" href="bronze.html"><i class="material-icons">ac_unit</i></a></li>
+      
+    </ul>
   </div>
-</div>
+  </div>
 
-<div id="grey" class="block grey lighten-1">
-  <nav class="pushpin-demo-nav" data-target="grey">
-    <div class="nav-wrapper grey">
-      <div class="container">
-        <a href="#" class="brand-logo">Silver</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#!">Silver Link 1</a></li>
-          <li><a href="#!">Silver Link 2</a></li>
-          <li><a href="#!">Silver Link 3</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div id="silverMap">
-  </div>
-</div>
+</body>
 
-<div id="orange" class="block orange darken-4">
-  <nav class="pushpin-demo-nav" data-target="orange">
-    <div class="nav-wrapper orange darken-4">
-      <div class="container">
-        <a href="#" class="brand-logo">Bronze</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#!">Bronze Link 1</a></li>
-          <li><a href="#!">Bronze Link 2</a></li>
-          <li><a href="#!">Bronze Link 3</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div id="bronzeMap">
-  </div>
-</div>
+
+
+
+
+
+
+
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
  <script>
    $(document).ready(function(){
-    $('.target').pushpin({
-      top: 0,
-      bottom: 1000,
-      offset: 0
+    $('.slider').slider();
+    // Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+   
     });
-   //    $('.pushpin-demo-nav').each(function() {
-   //   var $this = $(this);
-   //   var $target = $('#' + $(this).attr('data-target'));
-   //  $this.pushpin({
-   //     top: $target.offset().top,
-   //    bottom: $target.offset().top + $target.outerHeight() - $this.height()
-   //   });
-   // });
-  });
- </script>
+  </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
-  async defer></script>
-
-<script src="../public/assets/javascript/api.js"> </script>
 
 
 </body>
