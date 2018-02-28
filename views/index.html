@@ -27,6 +27,12 @@
     position: fixed !important;
   }
        
+  #goldMap, #silverMap, #bronzeMap, .container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  }
   </style>
 </head>
 <body>
@@ -43,6 +49,8 @@
       </div>
     </div>
   </nav>
+  <div id="goldMap">
+  </div>
 </div>
 
 <div id="grey" class="block grey lighten-1">
@@ -58,6 +66,8 @@
       </div>
     </div>
   </nav>
+  <div id="silverMap">
+  </div>
 </div>
 
 <div id="orange" class="block orange darken-4">
@@ -73,6 +83,8 @@
       </div>
     </div>
   </nav>
+  <div id="bronzeMap">
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -93,5 +105,12 @@
   // });
   });
  </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
+  async defer></script>
+
+<script src="../public/assets/javascript/api.js"> </script>
+
+
 </body>
 </html>
