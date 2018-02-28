@@ -52,6 +52,9 @@ html, body {
       </ul>
       <br><br>
 
+
+    
+
       <div class="container">
         <!-- Silver goole map goes here -->
         <div id="silverMap">
@@ -61,7 +64,20 @@ html, body {
 
 
 
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a><!--This trigger must be linked to country pins -->
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4 class="country">USA</h4>
+      <p>Silver Medals: <span class="medalcount">3</span></p>
+      <p class="events">Bobsled, Ice Hockey, Speed-skating</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
 
 
@@ -72,6 +88,7 @@ html, body {
  <script>
    $(document).ready(function(){
     $(".button-collapse").sideNav({closeOnClick: true});
+    $('#modal1').modal();
   
    
   });
