@@ -3,7 +3,7 @@ var router = express.Router();
 var db = require('../models');
 
 router.get('/', function(req, res){
-  res.redirect('/index.html'); 
+  res.redirect('index.html'); 
 });
 
 router.get('/gold', function(req, res){
@@ -46,3 +46,4 @@ router.post('/add', function(req, res){
   	});
 });
 
+module.exports = router;
