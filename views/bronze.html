@@ -65,7 +65,7 @@ html, body {
       </div>
 
       <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a><!--This trigger must be linked to country pins -->
+  <!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a><!This trigger must be linked to country pins -->
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal bottom-sheet">
@@ -97,6 +97,14 @@ html, body {
    
   });
  </script>
+ <script>
+$("#bronzeMap").on('click', function(event) { 
+
+
+      $('#modal1').modal('open');
+
+ });
+</script>
 
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
   async defer></script>
