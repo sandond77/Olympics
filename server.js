@@ -16,16 +16,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 // Import routes and give the server access to them
-var routes = require('./controllers/controller.js');
+var router = require('./controllers/controller.js');
 
-app.use('/', routes);
-app.use('/gold', routes);
-app.use('/silver', routes);
-app.use('/bronze', routes);
+app.use('/', router);
+app.use('/gold', router);
+app.use('/silver', router);
+app.use('/bronze', router);
+app.use('/add', router);
 
 
 var port = process.env.PORT || 3000;
-db.sequelize.sync().then(function(){  //take force true out before heroku commit
+db.sequelize.sync({ force: true }).then(function(){  //take force true out before heroku commit
 	app.listen(port);	
 })
  
