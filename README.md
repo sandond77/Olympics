@@ -8,3 +8,9 @@ Improvements: We would eventually like to get more data to display in the modal,
 Summary: This was an extremely fun project to code. It enabled us to deploy much of the knoweldge gained thus far, and showed us where we need improvement. Programming OMT also provided us with a great experience in collaborative programming on Github.
 
 Built Using: HTML, CSS, Javascript, Materialize, Node.JS, MySQL, Sequelize, & Heroku
+
+# Screen Shots
+
+![title](https://user-images.githubusercontent.com/27470842/36926025-7e0dffc4-1e2a-11e8-98c2-f09ddbcac661.PNG)
+![gold1](https://user-images.githubusercontent.com/27470842/36926039-8ff005de-1e2a-11e8-9254-206debe6731c.PNG)
+![silver](https://user-images.githubusercontent.com/27470842/36926051-9897124a-1e2a-11e8-9be1-f098276bc8a2.PNG)
