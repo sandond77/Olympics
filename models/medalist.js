@@ -29,7 +29,8 @@ module.exports = function(sequelize, DataTypes) {
 				isInt: true
 			}
 		},
-		Event: {
+
+		Sport: {
 			type: DataTypes.STRING,
 			allowNull: true,
 			// validate: We may want to validate to make sure its a Winter olympic event
