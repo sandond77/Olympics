@@ -31,6 +31,9 @@
 	      label: medals.toString(), 
 	      map: mapname
     });
+    marker.addListener('click', function(event) { 
+        $('#modal1').modal('open');
+    })
   }
 
 
