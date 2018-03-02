@@ -5,7 +5,7 @@ Solution: We obtained the medal count from sportsradar api and imported the JSON
 
 Improvements: We would eventually like to get more data to display in the modal, perhaps athlete name, pictures, video of event, etc. We also would like to broaden the scope to cover more sporting events. This would make OMT the goto site for sports events statistics. There is much repetition in the source code and we would like to refactor the code to be more streamlined. 
 
-Summary: This was an extremely fun project to code. It enabled us to deploy much of the knoweldge gained thus far, and showed us where we need improvement. Programming OMT also provided us with a great experience in collaborative programming on Github.
+Summary: This was an extremely fun project to code. It enabled us to deploy much of the knowledge gained thus far, and showed us where we need improvement. Programming OMT also provided us with a great experience in collaborative programming on Github.
 
 Built Using: HTML, CSS, Javascript, Materialize, Node.JS, MySQL, Sequelize, & Heroku
 
