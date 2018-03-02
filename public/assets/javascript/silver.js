@@ -27,12 +27,28 @@
   //This function takes in coordinates, a map, and label text and puts a marker on the map 
   function addMarker(location, mapname, medals) {
     var marker = new google.maps.Marker({
-	      position: location,
-	      label: medals.toString(), 
-	      map: mapname
+        position: location,
+        label: medals.toString(), 
+        map: mapname
     });
     marker.addListener('click', function(event) { 
         $('#modal1').modal('open');
+        console.log(marker.label)
+          $.getJSON('standings', function(data) {
+            for (var i = 0; i < data.length; i++) {
+              if (data[i].marker == marker.label) {
+                $('.country').html(data[i].country)
+                $('.medalcount').empty()
+                $('.medalcount').html(data[i].silver.length)
+                $('.sport').empty()
+                for (var j = 0; j < data[i].silver.length; j++) {
+                  $('.sport').append("<tr><td>"+data[i].silver[j][0]+"</td><td>"+data[i].silver[j][1]+"</td></tr>")
+                  // console.log("event: "+data[i].silver[j][1])
+                  // console.log('--------------------')
+                }
+              } 
+            }
+          });
     })
   }
 

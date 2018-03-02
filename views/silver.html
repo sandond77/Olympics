@@ -72,9 +72,18 @@ html, body {
   <!-- Modal Structure -->
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
-      <h4 class="country">USA</h4>
-      <p>Silver Medals: <span class="medalcount">3</span></p>
-      <p class="events">Bobsled, Ice Hockey, Speed-skating</p>
+      <h4 class="country"></h4>
+      <p>Silver Medals: <span class="medalcount"></span></p>
+      <table style="width:50%; padding:0">
+        <thead>
+          <tr>
+            <th>Sport</th>
+            <th>Event</th>
+          </tr>
+        </thead>
+        <tbody class ="sport">
+        </tbody>
+      </table>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>

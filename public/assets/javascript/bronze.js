@@ -33,6 +33,22 @@
     });
     marker.addListener('click', function(event) { 
         $('#modal1').modal('open');
+        console.log(marker.label)
+          $.getJSON('standings', function(data) {
+            for (var i = 0; i < data.length; i++) {
+              if (data[i].marker == marker.label) {
+                $('.country').html(data[i].country)
+                $('.medalcount').empty()
+                $('.medalcount').html(data[i].bronze.length)
+                $('.sport').empty()
+                for (var j = 0; j < data[i].bronze.length; j++) {
+                  $('.sport').append("<tr><td>"+data[i].bronze[j][0]+"</td><td>"+data[i].bronze[j][1]+"</td></tr>")
+                  // console.log("event: "+data[i].bronze[j][1])
+                  // console.log('--------------------')
+                }
+              } 
+            }
+          });
     })
   }
 
