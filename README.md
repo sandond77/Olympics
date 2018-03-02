@@ -14,3 +14,4 @@ Built Using: HTML, CSS, Javascript, Materialize, Node.JS, MySQL, Sequelize, & He
 ![title](https://user-images.githubusercontent.com/27470842/36926025-7e0dffc4-1e2a-11e8-98c2-f09ddbcac661.PNG)
 ![gold1](https://user-images.githubusercontent.com/27470842/36926039-8ff005de-1e2a-11e8-9254-206debe6731c.PNG)
 ![silver](https://user-images.githubusercontent.com/27470842/36926051-9897124a-1e2a-11e8-9be1-f098276bc8a2.PNG)
+![modal](https://user-images.githubusercontent.com/27470842/36926153-1ae33c10-1e2b-11e8-9d84-7ff318e4859a.PNG)
