@@ -8,48 +8,19 @@ router.get('/', function(req, res){
 });
 
 router.get('/gold', function(req, res){
-  	db.Medalist.findAll({
-    	where: {
-     	 	medals: gold
-    	}
-  	}).then(function(data){
-    	console.log(data)
-    	//Need to figure out how and where to render our data an to the page...
-  	});
+  res.sendFile(path.join(__dirname, '../views/gold.html'));
 });
 
-
 router.get('/silver', function(req, res){
-  	db.Medalist.findAll({
-    	where: {
-      		medals: silver
-    	}
-  	}).then(function(data){
-   		console.log(data)
-  	});
+  res.sendFile(path.join(__dirname, '../views/silver.html'));
 });
 
 router.get('/bronze', function(req, res){
-  	db.Medalist.findAll({
-    	where: {
-      		medals: bronze
-    	}
-  	}).then(function(data){
-    	console.log(data)
-  	});
+  res.sendFile(path.join(__dirname, '../views/bronze.html'));
 });
 
-router.post('/add', function(req, res){
-	db.Medalist.create({
-		  Country: "Norway",
-      Gold: 14,
-      Silver: 14, 
-      Bronze: 11,
-      Sport: "Winter Sports"
-  	}).then(function(data){
-        console.log("psoted");
-        // res.json(data)
-  	});
+router.get('/comments', function(req, res){
+  res.sendFile(path.join(__dirname, '../views/comments.html'));
 });
 
 module.exports = router;
