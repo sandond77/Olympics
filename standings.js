@@ -260,96 +260,240 @@ var standings = [
 {
   "place":8,
   "country":"Switzerland",
-  "gold":5,
-  "silver":6,
-  "bronze":4,
+  "gold":[
+      ["Cross-country skiing", "Men's 15 kilometre freestyle"],
+      ["Freestyle skiing", "Women's slopestyle"],
+      ["Alpine skiing", "Women's combined"],
+      ["Alpine skiing", "Mixed Team"],
+      ["Snowboarding", "Men's parallel giant slalom"]
+  ],
+  "silver":[
+      ["Curling", "Mixed doubles"],
+      ["Alpine skiing", "Men's super G"],
+      ["Alpine skiing", "Women's slalom"],
+      ["Freestyle skiing", "Women's slopestyle"],
+      ["Freestyle skiing", "Men's ski cross"],
+      ["Alpine skiing", "Men's slalom"]
+  ],
+  "bronze":[
+      ["Alpine skiing", "Men's downhill"],
+      ["Alpine skiing", "Women's combined"],
+      ["Freestyle skiing", "Women's ski cross"],
+      ["Curling", "Men's"]
+  ],
   "total":15
 },
 {
   "place":9,
   "country":"France",
-  "gold":5,
-  "silver":4,
-  "bronze":6,
+  "gold":[
+      ["Freestyle skiing", "Women's moguls"],
+      ["Biathlon", "Men's pursuit"],
+      ["Snowboarding", "Men's snowboard cross"],
+      ["Biathlon", "Men's mass start"],
+      ["Biathlon", "Mixed relay"]
+  ],
+  "silver":[
+      ["Alpine skiing", "Men’s combined"],
+      ["Snowboarding", "Women's snowboard cross"],
+      ["Figure skating", "Ice dancing"],
+      ["Freestyle skiing", "Women's halfpipe"]
+  ],
+  "bronze":[
+      ["Biathlon", "Women's pursuit"],
+      ["Alpine skiing", "Men’s combined"],
+      ["Alpine skiing", "Men's giant slalom"],
+      ["Cross-country skiing", "Men's 4×10 km relay"],
+      ["Cross-country skiing", "Men's team sprint"],
+      ["Biathlon", "Women's relay"]
+  ],
   "total":15
 },
 {
   "place":10,
   "country":"Sweden",
-  "gold":7,
-  "silver":6,
-  "bronze":1,
+  "gold":[
+      ["Cross-country skiing", "Women's 15 km skiathlon"],
+      ["Cross-country skiing", "Women's sprint"],
+      ["Biathlon", "Women's individual"],
+      ["Alpine skiing", "Women's slalom"],
+      ["Alpine skiing", "Men's slalom"],
+      ["Biathlon", "Men's relay"],
+      ["Curling", "Women's tournament"]
+  ],
+  "silver":[
+      ["Biathlon", "Men's pursuit"],
+      ["Cross-country skiing", "Women's 10 km freestyle"],
+      ["Cross-country skiing", "Women's 4×5 km relay"],
+      ["Cross-country skiing", "Women's team sprint"],
+      ["Biathlon", "Women's relay"],
+      ["Curling", "Men's tournament"]
+  ],
+  "bronze":[
+      ["Cross-country skiing", "Women's 30 km classical"]
+  ],
   "total":14
 },
 {
   "place":11,
   "country":"Austria",
-  "gold":5,
-  "silver":3,
-  "bronze":6,
-  "total":14
+  "gold":[
+      ["Luge", "Men's singles"],
+      ["Alpine skiing", "Men’s combined"],
+      ["Alpine skiing", "Men’s super-G"],
+      ["Alpine skiing", "Men’s giant slalom"],
+      ["Snowboarding", "Women's big air "]
+  ],
+  "silver":[
+      ["Luge", "Men's doubles"],
+      ["Alpine skiing", "Women's super-G"]
+  ],
+  "bronze":[
+      ["Nordic combined", "Individual normal hill/10km"],
+      ["Biathlon", "Men's individual"],
+      ["Luge", "Team relay"],
+      ["Alpine skiing", "Women's slalom"]
+  ],
+  "total":11
 },
 {
   "place":12,
   "country":"Japan",
-  "gold":4,
-  "silver":5,
-  "bronze":4,
+  "gold":[
+      ["Figure skating", "Men's singles"],
+      ["Speed skating", "Women's 500 metres"],
+      ["Speed skating", "Women's team pursuit"],
+      ["Speed skating", "Women's mass start "]
+  ],
+  "silver":[
+      ["Speed skating", "Women's 1500 metres"],
+      ["Nordic combined", "Individual normal hill/10 km"],
+      ["Snowboarding", "Men's halfpipe"],
+      ["Speed skating", "Women's 1000 metres"],
+      ["Figure skating", "Men's singles"]
+  ],
+  "bronze":[
+      ["Freestyle skiing", "Men's moguls"],
+      ["Ski jumping", "Women's normal hill individual"],
+      ["Speed skating", "Women's 1000 metres"],
+      ["Curling", "Women's curling"]
+  ],
   "total":13
 },
 {
   "place":13,
   "country":"Italy",
-  "gold":3,
-  "silver":2,
-  "bronze":5,
+  "gold":[
+      ["Short track speed skating", "Women's 500 metres"],
+      ["Snowboarding", "Women's snowboard cross "],
+      ["Alpine skiing", "Women's downhill"]
+  ],
+  "silver":[
+      ["Cross-country skiing", "Men's sprint"],
+      ["Short track speed skating", "Women's 3000 metre relay"]
+  ],
+  "bronze":[
+      ["Biathlon", "Men's sprint"],
+      ["Alpine skiing", "Women's giant slalom"],
+      ["Speed skating", "Men's 10000 meters"],
+      ["Biathlon", "Mixed relay"],
+      ["Short track speed skating", "Women's 1000 metres"]
+  ],
   "total":10
 },
 {
   "place":14,
   "country":"China",
-  "gold":1,
-  "silver":6,
-  "bronze":2,
+  "gold":[
+      ["Short track speed skating","Men's 500 metres"]
+  ],
+  "silver":[
+      ["Snowboarding", "Women's halfpipe"],
+      ["Figure skating", "Pairs "],
+      ["Freestyle skiing", "Women's aerials"],
+      ["Short track speed skating", "Women's 1500 metres"],
+      ["Freestyle skiing", "Men's aerials"],
+      ["Short track speed skating", "Men's 5000 metre relay"]
+  ],
+  "bronze":[
+      ["Freestyle skiing", "Women's aerials"],
+      ["Speed skating", "Men's 500 m"]
+  ],
   "total":9
 },
 {
   "place":15,
   "country":"Czech Republic",
-  "gold":2,
-  "silver":2,
-  "bronze":3,
+  "gold":[
+      ["Alpine skiing", "Women's super-G"],
+      ["Snowboarding", "Women's parallel giant slalom"]
+  ],
+  "silver":[
+      ["Biathlon","Mens sprint"],
+      ["Speed skating", "Women's 5000 m"]
+  ],
+  "bronze":[
+      ["Biathlon", "Women's sprint"],
+      ["Snowboarding", "Women's snowboard cross"],
+      ["Speed skating", "Women's 500 m"]
+  ],
   "total":7
 },
 {
   "place":16,
   "country":"Finland",
-  "gold":1,
-  "silver":1,
-  "bronze":4,
+  "gold":[
+      ["Cross-country skiing", "Men's kilometre classical"]
+  ],
+  "silver":[
+      ["Cross-country skiing", "Women's 30 kilometre classical"]
+  ],
+  "bronze":[
+      ["Cross-county skiing", "Women's 15 kilometre skiathlon"],
+      ["Snowboarding", "Women's slopestyle"],
+      ["Cross-country skiing", "Women's 10 kilometre freestyle"],
+      ["Ice hockey", "Women's tournament"]
+  ],
   "total":6
 },
 {
   "place":17,
   "country":"Great Britain",
-  "gold":1,
+  "gold":[
+    ["Skeleton", "Women's"],
+],
   "silver":0,
-  "bronze":4,
+  "bronze":[
+      ["Skeleton", "Men's"],
+      ["Freestyle skiing", "Women's Slopestyle"],
+      ["Skeleton", "Wome's"],
+      ["Snowboarding", "Men's Big Air"]
+  ],
   "total":5
 },
 {
   "place":18,
   "country":"Belarus",
-  "gold":2,
-  "silver":1,
+  "gold":[
+      ["Freestyle skiing", "Women's aerials"],
+      ["Biathlon", "Women's relay"]
+  ],
+  "silver":[
+      ["Biathlon", "Woman's mass start"]
+  ],
   "bronze":0,
   "total":3
 },
 {
   "place":19,
   "country":"Slovakia",
-  "gold":1,
-  "silver":2,
+  "gold":[
+      ["Biathlon", "Women's mass start"]
+  ],
+  "silver":[
+      ["Biathlon", "Women's persuit"],
+      ["Biathlon", "Women's individual"]
+  ],
   "bronze":0,
   "total":3
 },
@@ -357,24 +501,37 @@ var standings = [
   "place":20,
   "country":"Australia",
   "gold":0,
-  "silver":2,
-  "bronze":1,
+  "silver":[
+      ["Freestyle skiing", "Men's moguls"],
+      ["Snowboarding", "Men's snowboarding cross"]
+  ],
+  "bronze":[
+      ["Snowboarding", "Men's halfpipe"]
+  ],
   "total":3
 },
 {
   "place":21,
   "country":"Poland",
-  "gold":1,
+  "gold":[
+      ["Ski jumpings","Men's large hill individual"]
+  ],
   "silver":0,
-  "bronze":1,
+  "bronze":[
+      ["Ski jumping", "Men's large hill team"]
+  ],
   "total":2
 },
 {
   "place":22,
   "country":"Slovenia",
   "gold":0,
-  "silver":1,
-  "bronze":1,
+  "silver":[
+      ["Biathlon", "Men's individual"]
+  ],
+  "bronze":[
+      ["Snowboarding", "Men's parallel giant slalom"]
+  ],
   "total":2
 },
 {
@@ -382,7 +539,10 @@ var standings = [
   "country":"Spain",
   "gold":0,
   "silver":0,
-  "bronze":2,
+  "bronze":[
+      ["Snowboarding", "Men's snowboard cross"],
+      ["Figure skating", "Men's singles"]
+  ],
   "total":2
 },
 {
@@ -390,13 +550,18 @@ var standings = [
   "country":"New Zealand",
   "gold":0,
   "silver":0,
-  "bronze":2,
+  "bronze":[
+      ["Snowboarding", "Women's big air"],
+      ["Freestyle skiing", "Men's halfpipe"]
+  ],
   "total":2
 },
 {
   "place":25,
   "country":"Hungary",
-  "gold":1,
+  "gold":[
+      ["Short track speed skating", "Men's 5000 metre relay"]
+  ],
   "silver":0,
   "bronze":0,
   "total":1
@@ -404,7 +569,9 @@ var standings = [
 {
   "place":26,
   "country":"Ukraine",
-  "gold":1,
+  "gold":[
+      ["Freestyle skiing", "Men's aerials"]
+  ],
   "silver":0,
   "bronze":0,
   "total":1
@@ -413,7 +580,9 @@ var standings = [
   "place":27,
   "country":"Belgium",
   "gold":0,
-  "silver":1,
+  "silver":[
+      ["Speed skating", "Men's mass start"]
+  ],
   "bronze":0,
   "total":1
 },
@@ -422,7 +591,9 @@ var standings = [
   "country":"Kazakhstan",
   "gold":0,
   "silver":0,
-  "bronze":1,
+  "bronze":[
+      ["Freestyle skiing", "Women's moguls"]
+  ],
   "total":1
 },
 {
@@ -430,7 +601,9 @@ var standings = [
   "country":"Latvia",
   "gold":0,
   "silver":0,
-  "bronze":1,
+  "bronze": [
+      ["Bobsleigh", "Two-man"]
+  ],
   "total":0
 },
 {
@@ -438,7 +611,9 @@ var standings = [
   "country":"Liechtenstein",
   "gold":0,
   "silver":0,
-  "bronze":1,
+  "bronze":[
+      ["Alpine skiing", "Women's super-G"]
+  ],
   "total":1
 },
 ];
