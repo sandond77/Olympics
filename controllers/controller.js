@@ -23,5 +23,9 @@ router.get('/comments', function(req, res){
   res.sendFile(path.join(__dirname, '../views/comments.html'));
 });
 
+router.get('/standings', function(req,res){
+    res.sendFile(path.join(__dirname, '../public/assets/javascript/standings.json'));
+});
+
 module.exports = router;
 
