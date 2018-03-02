@@ -1,6 +1,8 @@
+[
 {
   "place":1,
   "country":"Norway",
+  "marker": "NO",
   "gold":[
     ["Cross-country skiing", "Men's 30 km skiathlon"],
     ["Cross-country skiing", "Men's sprint"],
@@ -51,6 +53,7 @@
 {
   "place":2,
   "country":"Germany",
+  "marker": "DE",
   "gold":[
     ["Biathlon","Women's sprint"],
     ["Ski jumping","Men's normal hill individual"],
@@ -93,6 +96,7 @@
 {
   "place":3,
   "country":"Canada",
+  "marker": "CA",
   "gold":[
     ["Figure skating","Team event"],
     ["Freestyle skiing","Men's moguls"],
@@ -133,6 +137,7 @@
 {
   "place":4,
   "country":"United States",
+  "marker": "USA",
   "gold":[
     ["Snowboarding","Men's slopestyle"],
     ["Snowboarding","Women's slopestyle"],
@@ -167,6 +172,7 @@
 {
   "place":5,
   "country":"Netherlands",
+  "marker": "NL",
   "gold":[
     ["Speed Skating","Women's 3000 metres"],
     ["Speed Skating","Men's 5000 metres"],
@@ -198,6 +204,7 @@
 {
   "place":6,
   "country":"South Korea",
+  "marker": "KR",
   "gold":[
     ["Short track speed skating","Men's 1500 metres"],
     ["Skeleton","Men's"],
@@ -226,6 +233,7 @@
 {
   "place":7,
   "country":"Olympic Athlete from Russia",
+  "marker": "RU",
   "gold":[
     ["Figure skating","Ladies' singles"],
     ["Ice hockey","Men's tournament"]
@@ -254,6 +262,7 @@
 {
   "place":8,
   "country":"Switzerland",
+  "marker": "CH",
   "gold":[
       ["Cross-country skiing", "Men's 15 kilometre freestyle"],
       ["Freestyle skiing", "Women's slopestyle"],
@@ -280,6 +289,7 @@
 {
   "place":9,
   "country":"France",
+  "marker": "FR",
   "gold":[
       ["Freestyle skiing", "Women's moguls"],
       ["Biathlon", "Men's pursuit"],
@@ -306,6 +316,7 @@
 {
   "place":10,
   "country":"Sweden",
+  "marker": "SE",
   "gold":[
       ["Cross-country skiing", "Women's 15 km skiathlon"],
       ["Cross-country skiing", "Women's sprint"],
@@ -331,6 +342,7 @@
 {
   "place":11,
   "country":"Austria",
+  "marker": "AT",
   "gold":[
       ["Luge", "Men's singles"],
       ["Alpine skiing", "Men’s combined"],
@@ -353,6 +365,7 @@
 {
   "place":12,
   "country":"Japan",
+  "marker": "JP",
   "gold":[
       ["Figure skating", "Men's singles"],
       ["Speed skating", "Women's 500 metres"],
@@ -377,6 +390,7 @@
 {
   "place":13,
   "country":"Italy",
+  "marker": "IT",
   "gold":[
       ["Short track speed skating", "Women's 500 metres"],
       ["Snowboarding", "Women's snowboard cross "],
@@ -398,6 +412,7 @@
 {
   "place":14,
   "country":"China",
+  "marker": "CN",
   "gold":[
       ["Short track speed skating","Men's 500 metres"]
   ],
@@ -418,6 +433,7 @@
 {
   "place":15,
   "country":"Czech Republic",
+  "marker": "CZ",
   "gold":[
       ["Alpine skiing", "Women's super-G"],
       ["Snowboarding", "Women's parallel giant slalom"]
@@ -436,6 +452,7 @@
 {
   "place":16,
   "country":"Finland",
+  "marker": "FI",
   "gold":[
       ["Cross-country skiing", "Men's kilometre classical"]
   ],
@@ -453,6 +470,7 @@
 {
   "place":17,
   "country":"Great Britain",
+  "marker": "GB",
   "gold":[
     ["Skeleton", "Women's"]
 ],
@@ -460,7 +478,7 @@
   "bronze":[
       ["Skeleton", "Men's"],
       ["Freestyle skiing", "Women's Slopestyle"],
-      ["Skeleton", "Wome's"],
+      ["Skeleton", "Women's"],
       ["Snowboarding", "Men's Big Air"]
   ],
   "total":5
@@ -468,12 +486,13 @@
 {
   "place":18,
   "country":"Belarus",
+  "marker": "BY",
   "gold":[
       ["Freestyle skiing", "Women's aerials"],
       ["Biathlon", "Women's relay"]
   ],
   "silver":[
-      ["Biathlon", "Woman's mass start"]
+      ["Biathlon", "Women's mass start"]
   ],
   "bronze":0,
   "total":3
@@ -481,6 +500,7 @@
 {
   "place":19,
   "country":"Slovakia",
+  "marker": "SK",
   "gold":[
       ["Biathlon", "Women's mass start"]
   ],
@@ -494,6 +514,7 @@
 {
   "place":20,
   "country":"Australia",
+  "marker": "AU",
   "gold":0,
   "silver":[
       ["Freestyle skiing", "Men's moguls"],
@@ -507,6 +528,7 @@
 {
   "place":21,
   "country":"Poland",
+  "marker": "PL",
   "gold":[
       ["Ski jumpings","Men's large hill individual"]
   ],
@@ -519,6 +541,7 @@
 {
   "place":22,
   "country":"Slovenia",
+  "marker": "SI",
   "gold":0,
   "silver":[
       ["Biathlon", "Men's individual"]
@@ -531,6 +554,7 @@
 {
   "place":23,
   "country":"Spain",
+  "marker": "ES",
   "gold":0,
   "silver":0,
   "bronze":[
@@ -542,6 +566,7 @@
 {
   "place":24,
   "country":"New Zealand",
+  "marker": "NZ",
   "gold":0,
   "silver":0,
   "bronze":[
@@ -553,6 +578,7 @@
 {
   "place":25,
   "country":"Hungary",
+  "marker": "HU",
   "gold":[
       ["Short track speed skating", "Men's 5000 metre relay"]
   ],
@@ -563,6 +589,7 @@
 {
   "place":26,
   "country":"Ukraine",
+  "marker": "UA",
   "gold":[
       ["Freestyle skiing", "Men's aerials"]
   ],
@@ -573,6 +600,7 @@
 {
   "place":27,
   "country":"Belgium",
+  "marker": "BE",
   "gold":0,
   "silver":[
       ["Speed skating", "Men's mass start"]
@@ -583,6 +611,7 @@
 {
   "place":28,
   "country":"Kazakhstan",
+  "marker": "KZ",
   "gold":0,
   "silver":0,
   "bronze":[
@@ -593,6 +622,7 @@
 {
   "place":29,
   "country":"Latvia",
+  "marker": "",
   "gold":0,
   "silver":0,
   "bronze": [
@@ -603,6 +633,7 @@
 {
   "place":30,
   "country":"Liechtenstein",
+  "marker": "LI",
   "gold":0,
   "silver":0,
   "bronze":[
@@ -610,3 +641,4 @@
   ],
   "total":1
 }
+]
