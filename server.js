@@ -2,26 +2,26 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var db = require('./models');
+var path = require('path');
 
 
 var app = express();
 
 
 // Serve static content for the app from the 'public' directory
-app.use(express.static(process.cwd() + '/public'));
+app.use('/public', express.static(path.join(__dirname, '/public')));
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Override with POST having ?_method=DELETE
 app.use(methodOverride('_method'));
 
 // Import routes and give the server access to them
 var routes = require('./controllers/controller.js');
-
-app.use(/,routes);
+app.use(routes);
 
 var port = process.env.PORT || 3000;
-db.sequelize.sync().then(function(){  //take force true out before heroku commit
-	app.listen(port);	
+db.sequelize.sync({force: true}).then(function(){  //take force true out before heroku commit
+	app.listen(port);
 })
- 

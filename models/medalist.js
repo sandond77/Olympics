@@ -28,7 +28,7 @@ module.exports = function(sequelize, DataTypes) {
 			validate:{
 				isInt: true
 			}
-		},{
+		},
 		Event: {
 			type: DataTypes.STRING,
 			allowNull: true,
