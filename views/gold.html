@@ -35,9 +35,11 @@ html, body {
       <a href="#" class="brand-logo">Gold Medals</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html"><i class="material-icons">home</i></a>
         <li><a href="#">Gold</a></li>
         <li><a href="silver.html">Silver</a></li>
         <li><a href="bronze.html">Bronze</a></li>
+        <li><a href="comments.html">Comments</a></li>
       </ul>
     	</div>
 	</nav>
@@ -58,13 +60,13 @@ html, body {
 </div>
 
 <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> <!--This trigger must be linked to country pins -->
+ <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> <!This trigger must be linked to country pins -->
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
       <h4 class="country">USA</h4>
-      <p>Silver Medals: <span class="medalcount">3</span></p>
+      <p>Gold Medals: <span class="medalcount">3</span></p>
       <p class="events">Bobsled, Ice Hockey, Speed-skating</p>
     </div>
     <div class="modal-footer">
@@ -86,6 +88,14 @@ html, body {
    
   });
  </script>
+  <script>
+$("#goldMap").on('click', function(event) { 
+
+
+      $('#modal1').modal('open');
+
+ });
+</script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
   async defer></script>

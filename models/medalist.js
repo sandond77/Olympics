@@ -29,6 +29,7 @@ module.exports = function(sequelize, DataTypes) {
 				isInt: true
 			}
 		},
+
 		Sport: {
 			type: DataTypes.STRING,
 			allowNull: true,

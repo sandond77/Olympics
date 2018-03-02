@@ -35,9 +35,11 @@ html, body {
       <a href="#" class="brand-logo">Silver Medals</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html"><i class="material-icons">home</i></a>
         <li><a href="gold.html">Gold</a></li>
         <li><a href="#">Silver</a></li>
         <li><a href="bronze.html">Bronze</a></li>
+        <li><a href="comments.html">Comments</a></li>
       </ul>
     </div>
 
@@ -65,7 +67,7 @@ html, body {
 
 
   <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a><!--This trigger must be linked to country pins -->
+ <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a><!This trigger must be linked to country pins -->
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal bottom-sheet">
@@ -93,6 +95,14 @@ html, body {
    
   });
  </script>
+  <script>
+$("#silverMap").on('click', function(event) { 
+
+
+      $('#modal1').modal('open');
+
+ });
+</script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
   async defer></script>
