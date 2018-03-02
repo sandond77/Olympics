@@ -8,7 +8,7 @@ var path = require('path');
 var app = express();
 
 // Serve static content for the app from the 'public' directory
-app.use('/public', express.static('public'));
+app.use('/public', express.static(path.join(__dirname, '/public')));
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 
 var exphbs = require("express-handlebars");
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({ defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them
