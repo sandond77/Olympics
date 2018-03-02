@@ -20,22 +20,24 @@ router.get('/bronze', function(req, res){
 });
 
 router.get('/comments', function(req, res){
-  res.sendFile(path.join(__dirname, '../views/comments.html'));
+	res.sendFile(path.join(__dirname, '../views/comments.html'));
+
+	db.Comments.findAll({
+	}).then(function(data){
+		var comments = document.getElementById('comments');
+		var newComments = document.createElement('p');
+		newComments.appendChild(document.createTextNode('Test'));
+		comments.appendChild(newComments);
+	});
 });
 
 router.post('/comments', function(req, res){
 	db.Comments.create({
 		Message: req.body.Message
 	}).then(function(data){
-		console.log("this is the data")
-		console.log(data)
-		// for (var i = 0; i < data.length; i++) {
-		// 	// $(".comments").append(data[i].datavalues)
-		// 	console.log(data[i].datavalues);
-		// }
-		
-	})
-  res.sendFile(path.join(__dirname, '../views/comments.html'));
+		res.sendFile(path.join(__dirname, '../views/comments.html'));
+	});
+
 });
 
 
