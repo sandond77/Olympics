@@ -41,10 +41,16 @@ router.get('/bronze', function(req, res){
 
 router.post('/add', function(req, res){
 	db.Medalist.create({
-		//insert data here
+		  Country: "Norway",
+      Gold: 14,
+      Silver: 14, 
+      Bronze: 11,
+      Sport: "Winter Sports"
   	}).then(function(data){
-   	 	console.log(data)
+        console.log("psoted");
+        // res.json(data)
   	});
 });
 
 module.exports = router;
+
