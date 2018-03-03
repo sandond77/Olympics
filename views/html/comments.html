@@ -43,7 +43,7 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <textarea id="icon_prefix2 message" class="materialize-textarea" name="comment"></textarea>
           <label for="icon_prefix2">Comments</label>
         </div>
       </div>
@@ -51,14 +51,14 @@
   </div>
 
   <div class="row">
-      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-</div>
+    <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </div>
 
 <div class="row">
   <h4>Previous comments</h4>
-  <span id="comments"><!--Dynamically generate comments in database here --></span>
+  <div class="comments"><!--Dynamically generate comments in database here --></div>
 </div>
         
 
@@ -66,12 +66,28 @@
 
 
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
  <script>
    $(document).ready(function(){
   	$(".button-collapse").sideNav({closeOnClick: true});
     $('#modal1').modal();
-   
+
+    $(".submit").click(function(event){
+      var comment = $(".materialize-textarea").val();
+      console.log("message: " + comment);
+      var add = {
+        Message: comment
+      };
+
+        $.ajax("/api/comments", {
+            type: "POST",
+            data: add
+        }).then(function() {
+              console.log("Added a comment");
+              location.reload();
+            }
+        );
+    })
   });
  </script>
 
