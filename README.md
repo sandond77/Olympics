@@ -9,6 +9,9 @@ Summary: This was an extremely fun project to code. It enabled us to deploy much
 
 Built Using: HTML, CSS, Javascript, Materialize, Node.JS, MySQL, Sequelize, & Heroku
 
+# Deployed App
+https://limitless-crag-85081.herokuapp.com/
+
 # Screen Shots
 
 ![title](https://user-images.githubusercontent.com/27470842/36926025-7e0dffc4-1e2a-11e8-98c2-f09ddbcac661.PNG)
