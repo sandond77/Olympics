@@ -23,7 +23,11 @@ function addMarker(location, mapname, medals) {
             if (data[i].marker == marker.label) {
               $('.country').html(data[i].country)
               $('.medalcount').empty()
-              $('.medalcount').html(data[i].gold.length)
+              if (data[i].gold === 0) {
+                $('.medalcount').html("0")
+              } else {
+                $('.medalcount').html(data[i].gold.length)
+              }
               $('.sport').empty()
               for (var j = 0; j < data[i].gold.length; j++) {
                 $('.sport').append("<tr><td>"+data[i].gold[j][0]+"</td><td>"+data[i].gold[j][1]+"</td></tr>")
