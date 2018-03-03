@@ -65,4 +65,5 @@ function marker(mapname){
   addMarker({lat: -40.900557, lng: 174.885971}, mapname, "NZ") //adds a marker on new zealand
   addMarker({lat: 48.019573,  lng: 66.923684}, mapname, "KZ") //adds a marker on kazakhstan
   addMarker({lat: 47.166,     lng: 9.555373}, mapname, "LI") //adds a marker on liechtenstein
+  addMarker({lat: 56.879635,  lng: 24.603189}, mapname, "LV")// adds a marker for latvia
 }
