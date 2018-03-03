@@ -1,16 +1,18 @@
 <div>
   <nav class="red lighten-1">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Comments</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/"><i class="material-icons">home</i></a>
-        <li><a href="/gold">Gold</a></li>
-        <li><a href="/silver">Silver</a></li>
-        <li><a href="/bronze">Bronze</a></li>
-        <li><a href="#">Comments</a></li>
-      </ul>
+      <div class="container">
+        <a href="#" class="brand-logo">Comments</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/"><i class="material-icons">home</i></a>
+          <li><a href="/gold">Gold</a></li>
+          <li><a href="/silver">Silver</a></li>
+          <li><a href="/bronze">Bronze</a></li>
+          <li><a href="#">Comments</a></li>
+        </ul>
       </div>
+    </div>
   </nav>
 </div>
 
@@ -23,32 +25,43 @@
   </ul>
   <br><br>
 
+<div class="container">
   <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
+    <form class="col s9">
+      <div class="input-field">
           <i class="material-icons prefix">mode_edit</i>
           <textarea id="icon_prefix2 message" class="materialize-textarea" name="comment"></textarea>
           <label for="icon_prefix2">Comments</label>
-        </div>
       </div>
     </form>
+
+    <div class="col s3" valign-wrapper pull-right">
+      <div class="row">
+      </div>
+      <div class="row">
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+
   </div>
 
   <div class="row">
-    <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
-      <i class="material-icons right">send</i>
-    </button>
-  </div>
-
-<div class="row">
-  <h4>Previous comments</h4>
-  <div class="comments">
-    <ol class="list-group">
-      {{#each comments}}
-        <li class="list-group-item">{{Message}}
-        <li>
-      {{/each}}
+    <div class="col s12">
+      <h4>Previous comments</h4>
+      <div class="comments">
+        <ol class="list-group">
+          {{#each Message}}
+            <div>
+            <li><p>{{Message}}</p>
+            <p> This comment was created on {{createdAt}} </p>
+            </li></div>
+          {{/each}}
+      </div>
+    </div>
   </div>
 </div>
 
@@ -65,7 +78,7 @@
         Message: comment
       };
 
-        $.ajax("/api/comments", {
+        $.ajax("/comments", {
             type: "POST",
             data: add
         }).then(function() {
