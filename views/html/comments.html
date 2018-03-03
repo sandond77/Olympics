@@ -79,7 +79,7 @@
         Message: comment
       };
 
-        $.ajax("/comments", {
+        $.ajax("/api/comments", {
             type: "POST",
             data: add
         }).then(function() {

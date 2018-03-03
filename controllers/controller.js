@@ -19,7 +19,7 @@ router.get('/bronze', function(req, res){
   res.sendFile(path.join(__dirname, '../views/html/bronze.html'));
 });
 
-router.get('/comments', function(req, res){
+router.get('/api/comments', function(req, res){
 	db.Comments.findAll({
 	}).then(function(data){
 		var hbsObject = {
@@ -31,18 +31,16 @@ router.get('/comments', function(req, res){
 	});
 });
 
-router.post('/comments', function(req, res){
+router.post('/api/comments', function(req, res){
 	db.Comments.create({
 		Message: req.body.Message
 	});
 });
 
-<<<<<<< HEAD
-=======
 router.get('/standings', function(req,res){
     res.sendFile(path.join(__dirname, '../public/assets/javascript/standings.json'));
 });
->>>>>>> e724df0c5c2180e9f38fa10dd7125bf23e7f1970
+
 
 module.exports = router;
 

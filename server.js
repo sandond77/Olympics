@@ -18,8 +18,11 @@ app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 
 var exphbs = require("express-handlebars");
-app.engine("handlebars", exphbs({ defaultLayout: "main"}));
+app.engine("handlebars", exphbs({ 
+	defaultLayout: "main",
+	layoutsDir: path.join(__dirname, '/views/layouts')}));
 app.set("view engine", "handlebars");
+app.set('views',path.join(__dirname,'views'))
 
 // Import routes and give the server access to them
 var routes = require('./controllers/controller.js');
