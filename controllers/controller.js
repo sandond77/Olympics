@@ -22,7 +22,7 @@ router.get('/bronze', function(req, res){
 router.get('/api', function(req, res){
 	db.Comments.findAll({
 	}).then(function(data){
-		res.json()
+		res.json(data)
 		console.log("response was sent")
 	})
 });
@@ -31,18 +31,24 @@ router.get('/api/comments', function(req, res){
 	db.Comments.findAll({
 	}).then(function(data){
 		var hbsObject = {
-			Message: data
+		Message: data.dataValues
 		}
 
-		console.log("handlebars object", hbsObject);
-		res.render('index')
-		console.log("rendered")
+		//this is not properly extracting the stored data from mysql and rendering it on the page
+		// console.log("data", data[0].Comments.dataValues.Message)
+		// console.log(data.Comments[0]);
+		// console.log("Data message", data[0].message)
+		// console.log("handlebars object", hbsObject);
+		res.render('index', hbsObject);
+		
 	});
 });
 
 router.post('/api/comments', function(req, res){
 	db.Comments.create({
 		Message: req.body.Message
+	}).then(function(){
+		res.redirect('/api/comments');	
 	});
 });
 

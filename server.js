@@ -31,5 +31,7 @@ app.use(routes);
 
 var port = process.env.PORT || 3000;
 db.sequelize.sync({force: true}).then(function(){  //take force true out before heroku commit
-	app.listen(port);
+	app.listen(port, function(){
+		console.log("App now listening at localhost:" + port);
+	});
 })
