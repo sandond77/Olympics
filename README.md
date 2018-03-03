@@ -7,7 +7,10 @@ Improvements: We would eventually like to get more data to display in the modal,
 
 Summary: This was an extremely fun project to code. It enabled us to deploy much of the knowledge gained thus far, and showed us where we need improvement. Programming OMT also provided us with a great experience in collaborative programming on Github.
 
-Built Using: HTML, CSS, Javascript, Materialize, Node.JS, MySQL, Sequelize, & Heroku
+Built Using: HTML, CSS, Javascript, Materialize, Node.JS, Handlebars, MySQL, Sequelize, & Heroku
+
+# Deployed App
+https://limitless-crag-85081.herokuapp.com/
 
 # Screen Shots
 
