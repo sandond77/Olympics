@@ -37,6 +37,12 @@ router.post('/comments', function(req, res){
 	});
 });
 
+<<<<<<< HEAD
+=======
+router.get('/standings', function(req,res){
+    res.sendFile(path.join(__dirname, '../public/assets/javascript/standings.json'));
+});
+>>>>>>> e724df0c5c2180e9f38fa10dd7125bf23e7f1970
 
 module.exports = router;
 
