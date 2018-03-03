@@ -57,7 +57,7 @@ function marker(mapname){
   addMarker({lat: 49.817492,  lng:  15.472962}, mapname, "CZ") //adds a marker on czech republic
   addMarker({lat: 53.709807,  lng: 27.953389}, mapname, "BY") //adds a marker on belarus
   addMarker({lat: 35.86166,   lng: 104.195397}, mapname, "CN") //adds a marker on china
-  addMarker({lat: 48.669026,  lng: 104.195397}, mapname, "SK") //adds a marker on slovakia
+  addMarker({lat: 48.669026,  lng: 19.699024}, mapname, "SK") //adds a marker on slovakia
   addMarker({lat: 61.92411,   lng: 25.748151}, mapname, "FI") //adds a marker on finland
   addMarker({lat: 55.378051,  lng: -3.435973}, mapname, "GB") //adds a marker on united kingdom
   addMarker({lat: 51.919438,  lng: 19.145136}, mapname, "PL") //adds a marker on poland
