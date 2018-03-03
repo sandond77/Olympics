@@ -29,60 +29,58 @@ html, body {
 
 </head>
 <body>
-  <div>
-    <nav class="yellow accent-2">
-      <div class="nav-wrapper">
-        <div class="container">
-          <a href="#" class="brand-logo">Gold Medals</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/"><i class="material-icons">home</i></a></li>
-            <li><a href="#">Gold</a></li>
-            <li><a href="/silver">Silver</a></li>
-            <li><a href="/bronze">Bronze</a></li>
-            <li><a href="/comments">Comments</a></li>
-          </ul>
-      	</div>
-  	</nav>
-  </div>
 
-	<ul class="side-nav" id="mobile-demo">
-    <li><a href="/"><i class="material-icons">home</i></a>
-		<li><a href="#">Gold</a></li>
-        <li><a href="/silver">Silver</a></li>
-        <li><a href="/bronze">Bronze</a></li>
-      </ul>
-      <br><br>
+<div>
+  <nav class="yellow accent-2">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo">Gold Medals</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/"><i class="material-icons">home</i></a></li>
+          <li><a href="#">Gold</a></li>
+          <li><a href="/silver">Silver</a></li>
+          <li><a href="/bronze">Bronze</a></li>
+          <li><a href="/comments">Comments</a></li>
+        </ul>
+    	</div>
+	</nav>
+</div>
+
+<ul class="side-nav" id="mobile-demo">
+  <li><a href="/"><i class="material-icons">home</i></a>
+	<li><a href="#">Gold</a></li>
+  <li><a href="/silver">Silver</a></li>
+  <li><a href="/bronze">Bronze</a></li>
+</ul>
+
+<br><br>
 
 <div class="container">
-	<!--Gold map google element goes here -->
   <div id="goldMap">
   </div>
 </div>
 
-<!-- Modal Trigger -->
- <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> <!This trigger must be linked to country pins -->
-
   <!-- Modal Structure -->
-  <div id="modal1" class="modal bottom-sheet">
-    <div class="modal-content">
-      <h4 class="country"></h4>
-      <p>Gold Medals: <span class="medalcount"></span></p>
-      <table style="width:50%; padding:0">
-        <thead>
-          <tr>
-            <th>Sport</th>
-            <th>Event</th>
-          </tr>
-        </thead>
-        <tbody class ="sport">
-        </tbody>
-      </table>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
+<div id="modal1" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4 class="country"></h4>
+    <p>Gold Medals: <span class="medalcount"></span></p>
+    <table style="width:50%; padding:0">
+      <thead>
+        <tr>
+          <th>Sport</th>
+          <th>Event</th>
+        </tr>
+      </thead>
+      <tbody class ="sport">
+      </tbody>
+    </table>
   </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
 
 
 
@@ -90,23 +88,13 @@ html, body {
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
- <script>
-   $(document).ready(function(){
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
   	$(".button-collapse").sideNav({closeOnClick: true});
     $('#modal1').modal();
-   
   });
  </script>
-<!--   <script>
-    marker.addListner('click', function(event) { 
-
-
-      $('#modal1').modal('open');
- }
-
- );
-</script> -->
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8moShpHaj8B7H9sTLMcayMf8J4RzzSE4&callback=initMap"
   async defer></script>
