@@ -19,15 +19,24 @@ router.get('/bronze', function(req, res){
   res.sendFile(path.join(__dirname, '../views/html/bronze.html'));
 });
 
+router.get('/api', function(req, res){
+	db.Comments.findAll({
+	}).then(function(data){
+		res.json()
+		console.log("response was sent")
+	})
+});
+
 router.get('/api/comments', function(req, res){
 	db.Comments.findAll({
 	}).then(function(data){
 		var hbsObject = {
-			Comments: data
+			Comments: "test"
 		}
 
 		console.log("handlebars object", hbsObject);
-		res.render("index", hbsObject)
+		res.render('index')
+		console.log("rendered")
 	});
 });
 

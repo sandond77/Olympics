@@ -1,15 +1,14 @@
 <div>
-    <nav class="red lighten-1">
+  <nav class="red lighten-1">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Comments</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/"><i class="material-icons">home</i></a>
-        <li><a href="/gold">Gold</a></li>
-        <li><a href="/silver">Silver</a></li>
-        <li><a href="/bronze">Bronze</a></li>
+        <li><a href="/html/gold">Gold</a></li>
+        <li><a href="/html/silver">Silver</a></li>
+        <li><a href="/html/bronze">Bronze</a></li>
         <li><a href="#">Comments</a></li>
-
       </ul>
       </div>
   </nav>
@@ -17,14 +16,14 @@
 
   <ul class="side-nav" id="mobile-demo">
     <li><a href="/"><i class="material-icons">home</i></a>
-    <li><a href="/gold">Gold</a></li>
-        <li><a href="/silver">Silver</a></li>
-        <li><a href="/bronze">Bronze</a></li>
-        <li><a href="#">Comments</a></li>
-      </ul>
-      <br><br>
+    <li><a href="/html/gold">Gold</a></li>
+    <li><a href="/html/silver">Silver</a></li>
+    <li><a href="/html/bronze">Bronze</a></li>
+    <li><a href="#">Comments</a></li>
+  </ul>
+  <br><br>
 
-        <div class="row">
+  <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
@@ -46,23 +45,17 @@
   <h4>Previous comments</h4>
   <div class="comments">
     <ol class="list-group">
-          {{#each Comments}}
-            <li class="list-group-item">{{Message}}
-            </li>
-          {{/each}}
-      </ol>
+      {{#each Comments}}
+        <li class="list-group-item">{{Message}}
+        <li>
+      {{/each}}
   </div>
 </div>
-        
-
-
-
-
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
  <script>
    $(document).ready(function(){
-  	$(".button-collapse").sideNav({closeOnClick: true});
+    $(".button-collapse").sideNav({closeOnClick: true});
     $('#modal1').modal();
 
     $(".submit").click(function(event){
@@ -72,7 +65,7 @@
         Message: comment
       };
 
-        $.ajax("/comments", {
+        $.ajax("/api/comments", {
             type: "POST",
             data: add
         }).then(function() {
