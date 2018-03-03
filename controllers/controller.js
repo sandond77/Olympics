@@ -31,7 +31,7 @@ router.get('/api/comments', function(req, res){
 	db.Comments.findAll({
 	}).then(function(data){
 		var hbsObject = {
-			Comments: "test"
+			Message: data
 		}
 
 		console.log("handlebars object", hbsObject);
